@@ -1,7 +1,52 @@
-*{
+/* *{
     background-color: black;
     color: white;
+} */
+/* header */
+
+body{
+    background-image: url('./image/elena-berezina-1.jpg');
+    background-repeat: none;
+    background-size: 100%;
+    position: relative;
+    font-family: 'Cantata One', serif !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Secular One', sans-serif !important;
 }
+.header{
+    border-radius: 30px 30px 30px;
+    margin-top: 5%;
+    background: rgb(255 255 255 / 44%);
+    position: relative;
+}
+.btn-outline-secondary{
+    margin-right:40px ;
+}
+.slogan-text{
+    padding: 10% 0 10% 13%;
+    
+}
+.slogan-btn{
+    padding: 0 0 10% 13%;
+    
+}
+
+    @keyframes move{
+        from{ top: 0px;}
+        to{ top: 50px;}
+    }
+    .image-banner{
+        animation-name: move;
+        animation-duration: 1s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        
+    }
+/* footer */
 a{
     text-decoration: none;
     color:white;
