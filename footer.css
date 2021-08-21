@@ -1,0 +1,36 @@
+*{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a :hover{
+    color:#2fad53!important;    
+}
+footer{
+    margin-top: 20px;
+}
+.highlight{
+    color: #2fad53;
+}
+.fa-facebook-messenger{
+    color:#01acff;
+}
+.fa-reddit{
+    color:#f43d16;
+}
+.fa-steam{
+    color:#125487;
+}
+.fa-snapchat{
+    color:#fffc00;
+}
+.fab{
+    font-size: 35px;
+    padding-right: 5px;
+}
+.support{
+    margin-left: -14px;
+}
