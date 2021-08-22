@@ -1,64 +1,231 @@
-/* *{
-    background-color: black;
-    color: white;
-} */
+
 /* header */
 
+
+@media all and (min-width: 420px){
 body{
-    background-image: url('./image/elena-berezina-1.jpg');
-    background-repeat: none;
-    background-size: 100%;
-    position: relative;
-    font-family: 'Cantata One', serif !important;
-    font-family: 'Montserrat', sans-serif !important;
-    font-family: 'Secular One', sans-serif !important;
+    width: 100%;
+    margin:0px;
+    font-family:'Roboto'; 
+    }
 }
 .header{
-    border-radius: 30px 30px 30px;
-    margin-top: 5%;
-    background: rgb(255 255 255 / 44%);
+    background-image: url('/Tim_tro/image/Thiết\ kế\ không\ tên.png');
+    background-repeat: none;
+    background-size: cover;
+    color: rgba(0, 0, 0, 0.575) !important;
     position: relative;
 }
-.btn-outline-secondary{
-    margin-right:40px ;
+
+nav a{
+    
+    color:rgb(0, 0, 0) !important;
+    
 }
+.nav-header{
+    position: fixed;
+    width: 100%;
+    background-color: #b5cbd988;
+    
+}
+
+/* .img-banner_1{
+    
+    border-radius: 50%;
+    width: 200px;
+    height: 100px;
+    margin-right: 0%;
+    float: right;
+    box-shadow: #0000008c 17px 0px 20px 5px;
+    position: absolute;
+    top: 40px;
+} */
+
+    .img-banner_1{
+        position: absolute;
+        border-radius: 81px 30px 30px 30px;
+        width: 25%;
+        margin-right: 0%;
+        float: right;
+        box-shadow: #0000008c 17px 0px 20px 5px;
+        position: absolute;
+        right: 50px;
+        top: 90px;
+
+    } 
+
+
+
+@keyframes move{
+    from{ top: 40px;}
+    to{ top: 60px;}
+}
+.img-banner_1 {
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    width: 30%;
+    
+    
+    }
+
+    
+      
+/* @keyframes img-banner_2{
+    from{ bottom: 30px;}
+    to{ bottom: 50px;}
+}
+.img-banner_2 {
+    animation-name:img-banner_2;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    width: 30%; */
+    
+    
+    
+.typing-demo {
+    width: 53ch;
+    animation: typing 2s steps(50), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px  solid;
+    background-color: rgba(185, 199, 204, 0.712) ;
+    text-align: center;
+    margin-left:30%;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+    
+    @keyframes typing {
+    from {
+        width: 0
+    }
+    }
+        
+    @keyframes blink {
+    100% {
+        border-color: transparent
+    }
+}
+.btn-search{
+    margin-left:40px ;
+    background-color:rgba(124, 121, 121, 0.781) !important;
+    color: rgb(252, 252, 252) !important;
+}
+
+/* slogan */
+
+
+
 .slogan-text{
     padding: 10% 0 10% 13%;
     
 }
-.slogan-btn{
-    padding: 0 0 10% 13%;
+ .slogan-text {
     
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    padding-top:200px;  
+    width:100%;
+    bottom:45%;
+    display:block;
+    text-align: center;
+  }
+
+    
+  .flip {
+    height:50px;
+    overflow:hidden;
+  }
+  
+  .flip > div > div {
+    color: rgba(185, 199, 204, 0.712);
+    padding: 0px 18px;
+    height: 53px;
+    margin-bottom: 37px;
+    display: inline-block;
+    
+  }
+  
+  .flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+  .flip div div {
+    background:rgba(241, 241, 241, 0.363);
+  }
+  .flip div:first-child div {
+    background:rgba(241, 241, 241, 0.363);
+  }
+  .flip div:last-child div {
+    background:rgba(241, 241, 241, 0.363);
+  }
+  
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+  
+  #inputGroupSelect04{
+    border: none;
+    color: black;
+    background-color:#bed8e373;
+    padding-left: 50px;
+    text-align: center;
 }
 
-    @keyframes move{
-        from{ top: 0px;}
-        to{ top: 50px;}
-    }
-    .image-banner{
-        animation-name: move;
-        animation-duration: 1s;
-        animation-direction: alternate-reverse;
-        animation-iteration-count: infinite;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        padding: 10px;
-        
+.slogan-btn{
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 20px 20px 20px 20px;
+    color: black;
+    background-color: #bed8e373;
+    position: relative;
+    padding: 20px 10px 20px 10px;
+   
+    
+}
+.slogan-content{
+    background-color: rgba(255, 255, 255, 0.185);
+
+}
+.slogan-content p{
+    text-align: center;
     }
 /* footer */
-a{
+.footer-social_network a{
     text-decoration: none;
     color:white;
 }
-a :hover{
+.footer-social_network a :hover{
     color:#2fad53!important;    
 }
 footer{
-    margin-top: 20px;
+    
+    background-color: #b5cbd9;
+    
 }
+.footer ul{
+    list-style: none;
+}
+.footer a{
+    
+    text-decoration: none;
+    color:white;
+}
+
 .highlight{
-    color: #2fad53;
+    color: rgb(255 255 255 / 46%);
 }
 .fa-facebook-messenger{
     color:#01acff;
