@@ -223,11 +223,15 @@ footer{
 .footer a{
     
     text-decoration: none;
-    color:white;
+    color:black;
+}
+.footer a:hover{
+
+    color:#125487;
 }
 
 .highlight{
-    color: rgb(255 255 255 / 46%);
+    color: #125487;
 }
 .fa-facebook-messenger{
     color:#01acff;
@@ -245,6 +249,4 @@ footer{
     font-size: 35px;
     padding-right: 5px;
 }
-.support{
-    margin-left: -14px;
-}
+
