@@ -19,13 +19,13 @@ body{
 
 nav a{
     
-    color:rgb(0, 0, 0) !important;
+    color:black !important;
     
 }
 .nav-header{
     position: fixed;
     width: 100%;
-    background-color: #b5cbd988;
+    background-color: #b5cbd9c7;
     
 }
 
@@ -91,12 +91,13 @@ nav a{
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px  solid;
-    background-color: rgba(185, 199, 204, 0.712) ;
+   
     text-align: center;
-    margin-left:30%;
+    margin-left:20%;
     color: black;
     font-size: 18px;
     padding: 10px;
+
 }
     
     @keyframes typing {
@@ -143,7 +144,7 @@ nav a{
   }
   
   .flip > div > div {
-    color: rgba(185, 199, 204, 0.712);
+    color: rgb(0, 0, 0);
     padding: 0px 18px;
     height: 53px;
     margin-bottom: 37px;
@@ -196,7 +197,8 @@ nav a{
     
 }
 .slogan-content{
-    background-color: rgba(255, 255, 255, 0.185);
+    background-color: rgba(255, 255, 255, 0.527);
+    width: 200px;
 
 }
 .slogan-content p{
