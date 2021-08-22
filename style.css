@@ -1,12 +1,15 @@
 
 /* header */
 
-
-@media all and (min-width: 420px){
-body{
-    width: 100%;
+*{
     margin:0px;
-    font-family:'Roboto'; 
+    padding:0;
+    font-family:'Lato - roboto'; 
+}
+@media all and (min-width: 992px){
+.header{
+    width: 100%;
+    
     }
 }
 .header{
@@ -14,7 +17,8 @@ body{
     background-repeat: none;
     background-size: cover;
     color: rgba(0, 0, 0, 0.575) !important;
-    position: relative;
+    max-width: 100%;
+    
 }
 
 nav a{
@@ -29,30 +33,20 @@ nav a{
     
 }
 
-/* .img-banner_1{
+
+/* banner image*/
+.img-banner_1{
     
-    border-radius: 50%;
-    width: 200px;
-    height: 100px;
+    border-radius: 81px 30px 30px 30px;
+    width: 25%;
     margin-right: 0%;
     float: right;
     box-shadow: #0000008c 17px 0px 20px 5px;
     position: absolute;
-    top: 40px;
-} */
+    right: 50px;
+    top: 90px;
 
-    .img-banner_1{
-        position: absolute;
-        border-radius: 81px 30px 30px 30px;
-        width: 25%;
-        margin-right: 0%;
-        float: right;
-        box-shadow: #0000008c 17px 0px 20px 5px;
-        position: absolute;
-        right: 50px;
-        top: 90px;
-
-    } 
+} 
 
 
 
@@ -65,60 +59,11 @@ nav a{
     animation-duration: 1.5s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
-    width: 30%;
+    width: 26%;
     
     
     }
-
-    
-      
-/* @keyframes img-banner_2{
-    from{ bottom: 30px;}
-    to{ bottom: 50px;}
-}
-.img-banner_2 {
-    animation-name:img-banner_2;
-    animation-duration: 1.5s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-    width: 30%; */
-    
-    
-    
-.typing-demo {
-    width: 53ch;
-    animation: typing 2s steps(50), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px  solid;
-   
-    text-align: center;
-    margin-left:20%;
-    color: black;
-    font-size: 18px;
-    padding: 10px;
-
-}
-    
-    @keyframes typing {
-    from {
-        width: 0
-    }
-    }
-        
-    @keyframes blink {
-    100% {
-        border-color: transparent
-    }
-}
-.btn-search{
-    margin-left:40px ;
-    background-color:rgba(124, 121, 121, 0.781) !important;
-    color: rgb(252, 252, 252) !important;
-}
-
-/* slogan */
-
+/* banner slogan */
 
 
 .slogan-text{
@@ -180,30 +125,77 @@ nav a{
   #inputGroupSelect04{
     border: none;
     color: black;
-    background-color:#bed8e373;
+    background-color:#ffffff;
     padding-left: 50px;
     text-align: center;
 }
 
 .slogan-btn{
-    margin-right: 20%;
-    margin-left: 20%;
-    border-radius: 20px 20px 20px 20px;
+    margin-right: 31%;
+    margin-left: 22%;
+    border-radius: 20px;
     color: black;
-    background-color: #bed8e373;
-    position: relative;
-    padding: 20px 10px 20px 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    box-shadow: inset #dfe9f3 1px -2px 20px 0px;
    
     
 }
 .slogan-content{
-    background-color: rgba(255, 255, 255, 0.527);
-    width: 200px;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 50px;
 
+}
+
+    
+/* banner typo */
+    
+.typing-demo {
+    width: 53ch;
+    animation: typing 2s steps(50), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px  solid;
+   
+    text-align: center;
+    margin-left:20%;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+
+}
+    
+    @keyframes typing {
+    from {
+        width: 0
+    }
+    }
+        
+    @keyframes blink {
+    100% {
+        border-color: transparent
+    }
 }
 .slogan-content p{
     text-align: center;
     }
+/* button */
+
+.btn{
+    
+    background-color:rgb(69, 98, 104) !important;
+    color: rgb(252, 252, 252) !important;
+}
+.btn-login{
+    margin-top: 10px;
+}
+.btn-signin{
+    margin-top: 10px;
+}
+.btn-search{
+    margin-left:50px ;
+}
+
 /* footer */
 .footer-social_network a{
     text-decoration: none;
