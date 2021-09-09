@@ -6,19 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Tim_tro/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css / animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
+    
     <header>
         <div class="header container-fluid">
             <div class="nav-header row">
@@ -78,10 +84,10 @@
                 </div>
 
                 <div class="image-banner col-sm-6  ">
-                   
-                    <img class="img-banner_1" src="/Tim_tro/image/img-banner_2.jpg" alt=""> 
+
+                    <img class="img-banner_1" src="/Tim_tro/image/img-banner_2.jpg" alt="">
                 </div>
-                
+
             </div>
             <div class="slogan-btn">
                 <div class="input-group">
@@ -107,17 +113,329 @@
                         <button class="btn btn-search" type="button">Search </button>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
 
     </header>
-
     <main>
+        <div class="post-header container-fluid">
+            <div class="title row">
+                <div class="title-inner col-6 wow animate__fadeInDown">
+                    <div class="room">
+                        <div class="room-inner">
+                            <span>Kênh thông tin</span>
+                            <span>Phòng Trọ</span>
+                        </div>
+                    </div>
+                    <div class="mozart">
+                        <div class="mozart-inner">số 1 Việt Nam</div>
+                    </div>
+                </div>
+                <div class="title-comment col-6">
+                    <p>Kênh thông tin Phòng Trọ số 1 Việt Nam - Website đăng tin cho thuê phòng trọ, nhà nguyên căn, căn
+                        hộ, ở ghép nhanh, hiệu quả với 100.000+ tin đăng và 2.500.000 lượt xem mỗi tháng.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src='/Tim_tro/image/image.jpg' alt=''>
+            </div>
+        </div>
+        <div class="post-main container-fluid ">
+            <h4 class="section-title">Tại sao lại lựa chọn chúng tôi?</h4>
+            <hr>
+            <div class="post-content row">
+                <div class="main-content col-3 ">
+                    <p>
+                        Chúng tôi biết bạn có rất nhiều lựa chọn, nhưng chúng tôi tự hào là trang web đứng top
+                        Triều Khúc về các từ khóa:
+                        <a href="" title="Cho thuê phòng trọ"><strong>cho thuê phòng trọ</strong></a>,
+                        <a href="" title="Cho thuê nhà nguyên căn">
+                            <strong>thuê nhà nguyên căn</strong></a>, <a href="" title="Cho thuê căn hộ">
+                            <strong>cho thuê căn hộ</strong></a>, <a href="" title="Tìm người ở ghép">
+                            <strong>tìm người ở ghép</strong></a>,
+                        <a href="" title="Cho thuê mặt bằng"><strong>cho thuê mặt bằng</strong></a>...
+                    </p>
+                </div>
+                <div class="post_list col-6  ">
+                    <div class="card_post ">
+                        <button class="card__save  js-save" type="button">
+                            <i class="fa  fa-bookmark"></i>
+                        </button>
+                        <figure class="card__image">
+                            <img src="/Tim_tro/image/1.jpg">
+                        </figure>
 
+                        <div class="card__body">
+                            <h3 class="card__name">Phòng trọ</h3>
+                            <p class="card__job">astronaut & engineer</p>
+                            <p class="card__bio"> Dành cho những bạn có nhu cầu ở đơn hay đôi, tùy theo nhu cầu về giá
+                                cả và
+                                hình thức</p>
+                        </div>
+                    </div>
+                    <div class="card_post ">
+                        <button class="card__save  js-save" type="button">
+                            <i class="fa  fa-bookmark"></i>
+                        </button>
+                        <figure class="card__image">
+                            <img src="/Tim_tro/image/2.jpg">
+                        </figure>
+
+                        <div class="card__body">
+                            <h3 class="card__name">nguyên căn</h3>
+                            <p class="card__job">astronaut & engineer</p>
+                            <p class="card__bio"> Dành cho những bạn có nhu cầu ở rộng rãi hay ở ghép nhiều người, cũng
+                                có
+                                thể tìm để mở văn phòng nhỏ </p>
+                        </div>
+                    </div>
+                    <div class="card_post">
+                        <button class="card__save  js-save" type="button">
+                            <i class="fa  fa-bookmark"></i>
+                        </button>
+                        <figure class="card__image">
+                            <img src="/Tim_tro/image/3.jpg">
+                        </figure>
+
+                        <div class="card__body">
+                            <h3 class="card__name">mặt bằng</h3>
+                            <p class="card__job">astronaut & engineer</p>
+                            <p class="card__bio"> Dành cho nhưng bạn có như cầu kinh doanh, làm văn phòng, hay bán hàng
+                                tùy
+                                theo nhu cầu và sở thích cá nhân </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content col-3 ">
+                    <p>Vì vậy tin của bạn đăng trên website sẽ tiếp cận được với nhiều
+                        khách hàng hơn, do đó giao dịch nhanh hơn, tiết kiệm chi phí hơn
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="product container">
+            <div class="product-sort">
+                <div class="section-header"><span class="sort-title">Danh sách tin đăng</span></div>
+                <div class="post-sort"><span>Sắp xếp: </span><a class="active" href="">Mặc định</a><a class=""
+                        href="">Mới nhất</a>
+                </div>
+            </div>
+            <div class="product-highlight row">
+                <div class="product-card col-8 ">
+                    <div class="card-detail ">
+                        <img class="col-sm-" src="./image/count.jpg" alt="">
+                        <div class="card-title ">
+                            <a href="">17 Đường số 61, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh</a>
+                            <p href="">4.5 triệu/tháng</p>
+                        </div>
+                        <div class="card-status">
+
+                        </div>
+                    </div>
+                    <div class="card-detail ">
+                        <img class="col-sm-" src="./image/count.jpg" alt="">
+                        <div class="card-title ">
+                            <a href="">17 Đường số 61, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh</a>
+                            <p href="">4.5 triệu/tháng</p>
+                        </div>
+                        <div class="card-status">
+
+                        </div>
+                    </div>
+                    <div class="card-detail ">
+                        <img class="col-sm-" src="./image/count.jpg" alt="">
+                        <div class="card-title ">
+                            <a href="">17 Đường số 61, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh</a>
+                            <p href="">4.5 triệu/tháng</p>
+                        </div>
+                        <div class="card-status">
+
+                        </div>
+                    </div>
+                    <div class="card-detail ">
+                        <img class="col-sm-" src="./image/count.jpg" alt="">" alt="">
+                        <div class="card-title ">
+                            <a href="">17 Đường số 61, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh</a>
+                            <p href="">4.5 triệu/tháng</p>
+                        </div>
+                        <div class="card-status">
+
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="product-filter col-4">
+                    <section class="section section-sublink">
+                        <div class="section-header"><span class="sort-title">Danh mục cho thuê</span></div>
+                        <ul class="list-links clearfix">
+                            <li>
+                                <h2><a href="" title="Cho thuê phòng trọ">Cho thuê phòng trọ</a></h2><span
+                                    class="count">(49.212)</span>
+                            </li>
+                            <li>
+                                <h2><a href="" title="Cho thuê nhà nguyên căn">Cho thuê nhà nguyên căn</a></h2><span
+                                    class="count">(8.954)</span>
+                            </li>
+                            <li>
+                                <h2><a href="" title="Cho thuê căn hộ">Cho thuê căn hộ</a></h2><span
+                                    class="count">(9.520)</span>
+                            </li>
+                            <li class="sub">
+                                <h2><a href="" title="Cho Thuê Căn Hộ Chung Cư Mini">Cho thuê căn hộ mini</a></h2>
+                            </li>
+                            <li class="sub">
+                                <h2><a href="" title="Cho Thuê Căn Hộ Dịch Vụ">Cho thuê căn hộ dịch vụ</a></h2>
+                            </li>
+                            <li>
+                                <h2><a href="" title="Cho thuê mặt bằng">Cho thuê mặt bằng</a></h2><span
+                                    class="count">(2.050)</span>
+                            </li>
+                            <li>
+                                <h2><a href="" title="Tìm người ở ghép">Tìm người ở ghép</a></h2><span
+                                    class="count">(14.608)</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section section-sublink">
+                        <div class="section-header"><span class="sort-title">Xem theo giá</span></div>
+                        <ul class="list-links price clearfix">
+                            <li><a href="">Dưới 1 triệu</a></li>
+                            <li><a href="">Từ 1 - 2 triệu</a></li>
+                            <li><a href="">Từ 2 - 3 triệu</a></li>
+                            <li><a href="">Từ 3 - 5 triệu</a></li>
+                            <li><a href="">Từ 5 - 7 triệu</a> </li>
+                            <li><a href="">Từ 7 - 10triệu</a></li>
+                            <li><a href="">Từ 10 - 15triệu</a></li>
+                            <li><a href="">Trên 15 triệu</a></li>
+                        </ul>
+                    </section>
+                    <section class="section section-sublink">
+                        <div class="section-header"><span class="sort-title">Xem theo diện tích</span></div>
+                        <ul class="list-links acreage clearfix">
+                            <li><a href="">Dưới 20 m<sup>2</sup></a></li>
+                            <li><a href="">Từ 20 -30m<sup>2</sup></a></li>
+                            <li><a href="">Từ 30 -50m<sup>2</sup></a></li>
+                            <li><a href="">Từ 50 -70m<sup>2</sup></a></li>
+                            <li><a href="">Từ 70 -90m<sup>2</sup></a></li>
+                            <li><a href="">Trên 90m<sup>2</sup></a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="container">
+                <div class="sec-heading text-center">
+                    <h6>" Phản hồi của khách hàng về dịch vụ "</h6>
+                </div>
+                <div class="main-count">
+                    <div class="counter-up">
+                        <div class="content">
+                            <div class="box">
+                                <div class="icon"><i class="fas fa-history"></i></div>
+                                <div class="counter">724</div>
+                                <div class="text">Lượt truy cập mỗi giờ</div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fas fa-gift"></i></div>
+                                <div class="counter">508</div>
+                                <div class="text">Bài đăng</div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fas fa-users"></i></div>
+                                <div class="counter">436</div>
+                                <div class="text">Lượt tương tác mỗi ngày</div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fas fa-award"></i></div>
+                                <div class="counter">120</div>
+                                <div class="text">Đánh giá tốt</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="clients-carousel owl-carousel">
+                        <div class="single-box">
+                            <div class="img-area"><img alt="" class="img-fluid" src="/Tim_tro/image/na.jpg"></div>
+                            <div class="content">
+                                <p>"Trước khi biết website, mình phải tốn nhiều công sức và chi phí
+                                    cho việc đăng tin cho thuê: từ việc phát tờ rơi, dán giấy, và đăng lên các website
+                                    khác nhưng
+                                    hiệu quả không cao. Từ khi biết website, mình đã thử đăng tin lên và đánh giá
+                                    hiệu quả khá cao trong khi chi phí khá thấp, không còn tình trạng phòng trống kéo
+                                    dài.""</p>
+                                <h4>Na</h4>
+                                <h6>Chủ căn hộ tại Triều Khúc</h6>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="img-area"><img alt="" class="img-fluid" src="/Tim_tro/image/mai.jpg"></div>
+                            <div class="content">
+                                <p>Trước khi biết website, mình phải tốn nhiều công sức và chi phí
+                                    cho việc đăng tin cho thuê: từ việc phát tờ rơi, dán giấy, và đăng lên các website
+                                    khác nhưng
+                                    hiệu quả không cao. Từ khi biết website, mình đã thử đăng tin lên và đánh giá
+                                    hiệu quả khá cao trong khi chi phí khá thấp, không còn tình trạng phòng trống kéo
+                                    dài."</p>
+                                <h4>Công chúa uwu</h4>
+                                <h6>Chủ căn hộ tại Triều Khúc</h6>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="img-area"><img alt="" class="img-fluid" src="/Tim_tro/image/the.jpg"></div>
+                            <div class="content">
+                                <p>Trước khi biết website, mình phải tốn nhiều công sức và chi phí
+                                    cho việc đăng tin cho thuê: từ việc phát tờ rơi, dán giấy, và đăng lên các website
+                                    khác nhưng
+                                    hiệu quả không cao. Từ khi biết website, mình đã thử đăng tin lên và đánh giá
+                                    hiệu quả khá cao trong khi chi phí khá thấp, không còn tình trạng phòng trống kéo
+                                    dài.""</p>
+                                <h4>Anh hàng xóm</h4>
+                                <h6>Chủ căn hộ tại Triều Khúc</h6>
+                            </div>
+                        </div>
+                        <div class="single-box">
+                            <div class="img-area"><img alt="" class="img-fluid" src="/Tim_tro/image/1.jpg"></div>
+                            <div class="content">
+                                <span class="rating-star"><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i><i class="icofont-star"></i><i
+                                        class="icofont-star"></i></span>
+                                <p>Trước khi biết website, mình phải tốn nhiều công sức và chi phí
+                                    cho việc đăng tin cho thuê: từ việc phát tờ rơi, dán giấy, và đăng lên các website
+                                    khác nhưng
+                                    hiệu quả không cao. Từ khi biết website, mình đã thử đăng tin lên và đánh giá
+                                    hiệu quả khá cao trong khi chi phí khá thấp, không còn tình trạng phòng trống kéo
+                                    dài.""</p>
+                                <h4>jimmy</h4>
+                                <h6>Chủ căn hộ tại Triều Khúc</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
-    <hr>
-
     <footer>
         <div class=" footer container-fluid">
             <div class="row">
@@ -150,6 +468,53 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+    </script>
+    <script>
+        $('.clients-carousel').owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            smartSpeed: 450,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                991: {
+                    items: 2
+                },
+                1200: {
+                    items: 2
+                },
+                1920: {
+                    items: 2
+                }
+            }
+        });
+    </script>
+    <script src="js / wow.min.js"> </script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
