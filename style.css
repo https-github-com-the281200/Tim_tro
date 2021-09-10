@@ -1,9 +1,9 @@
 @import "animate.css";
-/* header */
+/*=============== HEADER ===============*/
 *{
     margin:0px;
     padding:0;
-    font-family:'Lato - roboto'; 
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 :root {
@@ -58,7 +58,7 @@ nav a{
 }
 
 
-/* banner image*/
+/*============== BANNER IMAGE ===================*/
 .img-banner_1{
     
     border-radius: 81px 30px 30px 30px;
@@ -87,7 +87,7 @@ nav a{
     
     
     }
-/* banner slogan */
+/*=================== BANNER SLOGAN =================*/
 
 
 .slogan-text{
@@ -172,7 +172,7 @@ nav a{
 }
 
     
-/* banner typo */
+/*================== BANNER TYPO ===============*/
     
 .typing-demo {
     width: 53ch;
@@ -203,7 +203,7 @@ nav a{
 .slogan-content p{
     text-align: center;
     }
-/* button */
+/*===================== BUTTON ================= */
 
 .btn{
     
@@ -222,7 +222,7 @@ nav a{
 .btn-sub{
   margin-top: 10px;
 }
-/* main */
+/* =================MAIN =================*/
 
 
 
@@ -250,7 +250,7 @@ nav a{
       transform: scale(2, 2);
     }
   }
-  /* .post-header */
+  /* ==================POST-HEADER=================== */
 
 .post-header:hover {
     opacity: 0.5;
@@ -320,7 +320,7 @@ nav a{
 #app:active * {
   animation: none !important;
 }
-/* post main */
+/* =================POST MAIN==================== */
 .post-main {  
     width: 50%;
     min-height: 70vh;
@@ -565,7 +565,7 @@ hr{
   color: rgba(250, 250, 250, 0.4);
 }
 
-/* product-sort  */
+/*================= PRODUCT-SORT  =================*/
 
 .product-sort{
     padding: 20px;
@@ -579,7 +579,7 @@ hr{
     margin: 2px 2px 2px 2px;
     box-shadow: #82abbe8c -1px 5px 14px 1px;
 }
-/* product */
+/* =================PRODUCT =====================*/
 .product{
     background-color: #e6e9f0;
     box-shadow: #0000004d 1px 5px 20px 4px;
@@ -603,9 +603,38 @@ hr{
     padding: 10px 10px 10px 10px;
 }
 .card-title a{
-    text-decoration: none;
+    text-decoration: none!important;
     color: black;
 }
+.card-detail .card-title .main-title{
+  font-weight: bolder;
+  font-size: large;
+}
+.card-detail .card-title .location{
+  margin-top: 5px;
+  margin-right: 10px;
+  font-weight: lighter;
+  opacity: 0.6;
+}
+.card-detail .card-title .location :hover{
+  opacity: 1;
+  color: #01acff;
+}
+.card-detail .card-title .acreage{
+  font-weight: lighter;
+  opacity: 0.6;
+}
+.card-detail .card-title .acreage :hover{
+  opacity: 1;
+  color: #01acff;
+}
+.card-detail .card-title .price{
+  margin-top: 10px;
+  color: #125487;
+  font-weight: 700;
+  font-size:large;
+}
+
 .list-links li {
     position: relative;
     display: flex;
@@ -662,7 +691,7 @@ li, ol, ul {
     color: rgba(100, 130, 200, 0.45);
     padding-bottom: 10px;
 }
-/* couter */
+/* ==================COUTER============== */
 .main-count{
   
   padding: 30px;
@@ -720,7 +749,7 @@ li, ol, ul {
 
 }
 
-/* comment */
+/*============== COMMENT================== */
 .testimonial {
   padding: 5%;
 }
@@ -818,7 +847,7 @@ li, ol, ul {
 	}
 }
 
-/* footer */
+/*============== FOOTER===============*/
 .footer-social_network a{
     text-decoration: none;
     color:white;
@@ -827,7 +856,7 @@ li, ol, ul {
     color:#2fad53!important;    
 }
 footer{
-    padding-top: 10px;
+    padding: 35px 20px;
     background-color: #b5cbd9;
     
 }
@@ -836,7 +865,7 @@ footer{
 }
 .footer a{
     
-    text-decoration: none;
+    text-decoration: none!important;
     color:black;
 }
 .footer a:hover{
