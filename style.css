@@ -1,13 +1,13 @@
 @import "animate.css";
-/* header */
+/*================== HEADER =======================*/
 *{
     margin:0px;
     padding:0;
-    font-family:'Lato - roboto'; 
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 :root {
-  --font: "Roboto", sans-serif;
+  --font: "Poppins", sans-serif;
   --fontOrigin: 1rem;     /* 16px */
   --fontSmall: 0.625em;   /* 10px */
   --fontMedium: 0.875em;  /* 14px */
@@ -61,7 +61,7 @@ a:hover{
 }
 
 
-/* banner image*/
+/* ========================BANNER IMAGE=====================*/
 .img-banner_1{
     
     border-radius: 81px 30px 30px 30px;
@@ -90,7 +90,7 @@ a:hover{
     
     
     }
-/* banner slogan */
+/* ============================BANNER SLOGAN======================= */
 
 
 .slogan-text{
@@ -175,7 +175,7 @@ a:hover{
 }
 
     
-/* banner typo */
+/* ==========================BANNER TYPO ==================================*/
     
 .typing-demo {
     width: 53ch;
@@ -206,7 +206,7 @@ a:hover{
 .slogan-content p{
     text-align: center;
     }
-/* button */
+/*=========================== BUTTON =============================*/
 
 .btn{
     
@@ -225,7 +225,7 @@ a:hover{
 .btn-sub{
   margin-top: 10px;
 }
-/* main */
+/* =====================MAIN ================================*/
 
 
 
@@ -253,7 +253,7 @@ a:hover{
       transform: scale(2, 2);
     }
   }
-  /* .post-header */
+  /* =============================POST-HEADER =============================*/
 
 .post-header:hover {
     opacity: 0.5;
@@ -323,7 +323,7 @@ a:hover{
 #app:active * {
   animation: none !important;
 }
-/* post main */
+/* =======================POST MAIN =====================*/
 .post-main {  
     width: 50%;
     min-height: 70vh;
@@ -568,7 +568,7 @@ hr{
   color: rgba(250, 250, 250, 0.4);
 }
 
-/* product-sort  */
+/* =========================PRODUCT-SORT  ==========================*/
 
 .product-sort{
     padding: 20px;
@@ -582,7 +582,7 @@ hr{
     margin: 2px 2px 2px 2px;
     box-shadow: #82abbe8c -1px 5px 14px 1px;
 }
-/* product */
+/* =======================PRODUCT ======================*/
 .product{
     background-color: #e6e9f0;
     box-shadow: #0000004d 1px 5px 20px 4px;
@@ -607,30 +607,34 @@ hr{
 }
 .card-title{
   justify-content: center;
-  padding: 50px 0;
-  
+  padding: 10px 0;
 
 }
 .price{
   font-size: 25px;
   font-weight: 700;
   padding: 10px;
+  color: #0f6a9e;
 }
 .title-status{
   color: #0000008f;
   font-weight: 400;
 }
-.card-title a{
+.card-detail .card-title .main-title {
     text-decoration: none;
-    color: #4f6077;
+    color: #000000;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
 }
-.card-title a:hover{
+.card-title .feature{
   text-decoration: none;
-  color: rgb(128, 168, 179);
-  font-size: 20px;
+  margin: 0 10px;
+  color: #125487;
 }
+.card-title .feature :hover{
+  color: #01acff;
+}
+
 .card-status button.btn{
   text-align: center;
 }
@@ -690,7 +694,7 @@ li, ol, ul {
     color: rgba(100, 130, 200, 0.45);
     padding-bottom: 10px;
 }
-/* couter */
+/*========================== COUTER =======================*/
 .main-count{
   
   padding: 30px;
@@ -748,7 +752,7 @@ li, ol, ul {
 
 }
 
-/* comment */
+/*================================ COMMENT ==========================*/
 .testimonial {
   padding: 5%;
 }
@@ -846,7 +850,7 @@ li, ol, ul {
 	}
 }
 
-/* footer */
+/* ========================FOOTER ========================*/
 .footer-social_network a{
     text-decoration: none;
     color:white;
