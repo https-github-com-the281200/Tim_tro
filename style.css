@@ -47,7 +47,7 @@ nav a{
     
 }
 a:hover{
-  text-decoration: none;
+  text-decoration: none!important;
 }
 .nav-header{
     position: fixed;
@@ -896,3 +896,43 @@ footer{
     padding-right: 5px;
 }
 
+/* ========================POST ========================*/
+.manage{
+  padding: 50px;
+  color: #000000!important;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 0px 30px 0px 0;
+  border: 8px white;
+  box-shadow: #539ed952 12px 7px 15px 0px;
+  position: fixed;
+ 
+}
+.manage a{
+  color: #000000!important;
+}
+.name i{
+  font-size: 50px;
+}
+.avata{
+  padding: 50px;
+}
+.manage-title ul li {
+  font-size: 20px;
+}
+.fa-newspaper{
+  padding: 15px;;
+  font-size: 25px;
+}
+.fa-user-edit{
+  padding: 15px;;
+  font-size: 25px;
+}
+.fa-comments{
+  padding: 15px;;
+  font-size: 25px;
+}
+.fa-sign-out-alt{
+  padding: 15px;
+  font-size: 25px;
+}
