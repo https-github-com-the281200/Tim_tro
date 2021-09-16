@@ -19,46 +19,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
     <title>TIM TRO</title>
 </head>
 
 <body>
-    
     <header>
         <div class="header container-fluid">
             <div class="nav-header row">
-                <div class="logo col-3">
-
+                <div class="logo col-2">
+                    
                 </div>
                 <div class="tool-header col-6">
                     <nav class="navbar navbar-expand-lg  ">
-                        <a class="navbar-brand" href="#">Trang chủ</a>
+                        <a class="nav-link" href="#">Trang chủ |</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Cho Thuê phòng trọ <span
-                                            class="sr-only">(current)</span></a>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Cho Thuê phòng trọ |</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Cho thuê căn hộ</a>
+                                    <a class="nav-link" href="#">Cho thuê căn hộ |</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Cho thuê mặt bằng</a>
+                                    <a class="nav-link" href="#">Cho thuê mặt bằng |</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">liên hệ</a>
+                                    <a class="nav-link" href="#">Liên hệ </a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <div class="login col-3">
+                <div class="login col-2">
                     <button type="button" class="login btn btn-login">Đăng nhập</button>
                     <button type="button" class="login btn btn-signin">Đăng Ký</button>
+                </div>
+                <div class="col-1">
+                    <div class="profile_home">
+                        <a class="pro_name" href=""><i class="fas fa-user-circle"></i> Ngoc Anh </a>
+                    </div>
                 </div>
             </div>
             <div class="banner row">
@@ -118,7 +122,7 @@
     <main>
         <div class="post-header container-fluid">
             <div class="title row">
-                <div class="title-inner col-6 wow animate__fadeInDown">
+                <div class="title-inner col-6 wow animate__animated animate__slideInLeft">
                     <div class="room">
                         <div class="room-inner">
                             <span>Kênh thông tin</span>
@@ -129,21 +133,21 @@
                         <div class="mozart-inner">số 1 Việt Nam</div>
                     </div>
                 </div>
-                <div class="title-comment col-6">
+                <div class="title-comment col-6  wow animate__animated animate__slideInRight">
                     <p>Kênh thông tin Phòng Trọ số 1 Việt Nam - Website đăng tin cho thuê phòng trọ, nhà nguyên căn, căn
                         hộ, ở ghép nhanh, hiệu quả với 100.000+ tin đăng và 2.500.000 lượt xem mỗi tháng.</p>
                 </div>
             </div>
             <div class="image">
-                <img src='/Tim_tro/image/image.jpg' alt=''>
+                <img src='/Tim_tro/image/comp_2.gif' alt=''>
             </div>
         </div>
         <div class="post-main container-fluid ">
-            <h4 class="section-title">Tại sao lại lựa chọn chúng tôi?</h4>
+            <h4 class="section-title wow animate__animated animate__slideInDown">Tại sao lại lựa chọn chúng tôi?</h4>
             <hr>
             <div class="post-content row">
                 <div class="main-content col-3 ">
-                    <p>
+                    <p class="wow animate__animated animate__rotateInDownLeft">
                         Chúng tôi biết bạn có rất nhiều lựa chọn, nhưng chúng tôi tự hào là trang web đứng top
                         Triều Khúc về các từ khóa:
                         <a href="" title="Cho thuê phòng trọ"><strong>cho thuê phòng trọ</strong></a>,
@@ -205,7 +209,7 @@
                     </div>
                 </div>
                 <div class="main-content col-3 ">
-                    <p>Vì vậy tin của bạn đăng trên website sẽ tiếp cận được với nhiều
+                    <p class="wow animate__animated animate__rotateInDownRight">Vì vậy tin của bạn đăng trên website sẽ tiếp cận được với nhiều
                         khách hàng hơn, do đó giao dịch nhanh hơn, tiết kiệm chi phí hơn
                     </p>
                 </div>
@@ -283,68 +287,67 @@
                         </ul>
                     </nav>
                 </div>
-
-
                 <div class="product-filter col-4">
                     <section class="section section-sublink">
-                        <div class="section-header"><span class="sort-title">Danh mục cho thuê</span></div>
+                        <div class="section-header"><span class="sort-title"><i class="fas fa-angle-right"></i> Danh mục cho thuê</span></div>
                         <ul class="list-links clearfix">
                             <li>
-                                <h2><a href="" title="Cho thuê phòng trọ">Cho thuê phòng trọ</a></h2><span
+                                <h2><a href="" title="Cho thuê phòng trọ"><i class="fas fa-angle-right"></i> Cho thuê phòng trọ</a></h2><span
                                     class="count">(49.212)</span>
                             </li>
                             <li>
-                                <h2><a href="" title="Cho thuê nhà nguyên căn">Cho thuê nhà nguyên căn</a></h2><span
+                                <h2><a href="" title="Cho thuê nhà nguyên căn"><i class="fas fa-angle-right"></i>Cho thuê nhà nguyên căn</a></h2><span
                                     class="count">(8.954)</span>
                             </li>
                             <li>
-                                <h2><a href="" title="Cho thuê căn hộ">Cho thuê căn hộ</a></h2><span
+                                <h2><a href="" title="Cho thuê căn hộ"><i class="fas fa-angle-right"></i>Cho thuê căn hộ</a></h2><span
                                     class="count">(9.520)</span>
                             </li>
                             <li class="sub">
-                                <h2><a href="" title="Cho Thuê Căn Hộ Chung Cư Mini">Cho thuê căn hộ mini</a></h2>
+                                <h2><a href="" title="Cho Thuê Căn Hộ Chung Cư Mini"><i class="fas fa-angle-right"></i>Cho thuê căn hộ mini</a></h2>
                             </li>
                             <li class="sub">
-                                <h2><a href="" title="Cho Thuê Căn Hộ Dịch Vụ">Cho thuê căn hộ dịch vụ</a></h2>
+                                <h2><a href="" title="Cho Thuê Căn Hộ Dịch Vụ"><i class="fas fa-angle-right"></i>Cho thuê căn hộ dịch vụ</a></h2>
                             </li>
                             <li>
-                                <h2><a href="" title="Cho thuê mặt bằng">Cho thuê mặt bằng</a></h2><span
+                                <h2><a href="" title="Cho thuê mặt bằng"><i class="fas fa-angle-right"></i>Cho thuê mặt bằng</a></h2><span
                                     class="count">(2.050)</span>
                             </li>
                             <li>
-                                <h2><a href="" title="Tìm người ở ghép">Tìm người ở ghép</a></h2><span
+                                <h2><a href="" title="Tìm người ở ghép"><i class="fas fa-angle-right"></i>Tìm người ở ghép</a></h2><span
                                     class="count">(14.608)</span>
                             </li>
                         </ul>
                     </section>
                     <section class="section section-sublink">
-                        <div class="section-header"><span class="sort-title">Xem theo giá</span></div>
+                        <div class="section-header"><span class="sort-title"><i class="fas fa-angle-right"></i>Xem theo giá</span></div>
                         <ul class="list-links price clearfix">
-                            <li><a href="">Dưới 1 triệu</a></li>
-                            <li><a href="">Từ 1 - 2 triệu</a></li>
-                            <li><a href="">Từ 2 - 3 triệu</a></li>
-                            <li><a href="">Từ 3 - 5 triệu</a></li>
-                            <li><a href="">Từ 5 - 7 triệu</a> </li>
-                            <li><a href="">Từ 7 - 10triệu</a></li>
-                            <li><a href="">Từ 10 - 15triệu</a></li>
-                            <li><a href="">Trên 15 triệu</a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Dưới 1 triệu</a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 1 - 2 triệu</a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 2 - 3 triệu</a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 3 - 5 triệu</a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 5 - 7 triệu</a> </li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 7 - 10triệu</a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 10 - 15triệu</a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Trên 15 triệu</a></li>
                         </ul>
                     </section>
                     <section class="section section-sublink">
-                        <div class="section-header"><span class="sort-title">Xem theo diện tích</span></div>
+                        <div class="section-header"><span class="sort-title"><i class="fas fa-angle-right"></i>Xem theo diện tích</span></div>
                         <ul class="list-links acreage clearfix">
-                            <li><a href="">Dưới 20 m<sup>2</sup></a></li>
-                            <li><a href="">Từ 20 -30m<sup>2</sup></a></li>
-                            <li><a href="">Từ 30 -50m<sup>2</sup></a></li>
-                            <li><a href="">Từ 50 -70m<sup>2</sup></a></li>
-                            <li><a href="">Từ 70 -90m<sup>2</sup></a></li>
-                            <li><a href="">Trên 90m<sup>2</sup></a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Dưới 20 m<sup>2</sup></a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 20 -30m<sup>2</sup></a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 30 -50m<sup>2</sup></a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 50 -70m<sup>2</sup></a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Từ 70 -90m<sup>2</sup></a></li>
+                            <li><a href=""><i class="fas fa-angle-right"></i>Trên 90m<sup>2</sup></a></li>
                         </ul>
                 </div>
             </div>
         </div>
         <div class="testimonial">
-            <div class="container">
+            
+            <div class="container-fluid">
                 <div class="sec-heading text-center">
                     <h6>" Phản hồi của khách hàng về dịch vụ "</h6>
                 </div>
@@ -374,7 +377,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class=" row">
                     <div class="clients-carousel owl-carousel">
                         <div class="single-box">
                             <div class="img-area"><img alt="" class="img-fluid" src="/Tim_tro/image/na.jpg"></div>

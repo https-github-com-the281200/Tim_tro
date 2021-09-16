@@ -19,7 +19,6 @@
 }
 
 body{
-   
     font-size: 1rem;
     line-height: 1.2;
     letter-spacing: 0.005rem;
@@ -49,17 +48,71 @@ nav a{
 a:hover{
   text-decoration: none!important;
 }
+.navbar{
+	padding: 0;
+}
+.nav-link{
+	color: #212121 !important;
+	font-weight: 500;
+    transition: all 200ms linear;
+}
+.nav-item:hover .nav-link{
+	color: #8167a9 !important;
+}
+.nav-item.active .nav-link{
+	color: #777 !important;
+}
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background-color: #8167a9;
+	opacity: 0;
+  transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item.active:hover:after{
+	opacity: 0;
+}
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
 .nav-header{
-    position: fixed;
-    
-    background-color: #b5cbd9c7;
-    top: 0; 
-    left: 0; 
-    right: 0;
-    z-index: 100000; 
+  position: fixed; 
+  background-color: #fafeff;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  z-index: 100000; 
+  -webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+  box-shadow: #aec8d52e 1px 7px 6px 0px;
     
 }
-
+.profile_home a i{
+  color: #000000;
+  font-size: 25px;
+  
+  
+}
+.profile_home a{
+  color: #000000;
+}
+.profile_home{
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(254 254 254 / 68%);
+  border-radius: 30px;
+  padding-top:3px;
+  padding-bottom:3px;
+}
 
 /* ========================BANNER IMAGE=====================*/
 .img-banner_1{
@@ -78,7 +131,7 @@ a:hover{
 
 
 @keyframes move{
-    from{ top: 40px;}
+    from{ top: 30px;}
     to{ top: 60px;}
 }
 .img-banner_1 {
@@ -158,8 +211,7 @@ a:hover{
 }
 
 .slogan-btn{
-    margin-right: 31%;
-    margin-left: 22%;
+  margin: 5% 25% 2% 25%;
     border-radius: 20px;
     color: black;
     background-color: rgb(255, 255, 255);
@@ -209,7 +261,7 @@ a:hover{
 /*=========================== BUTTON =============================*/
 
 .btn{
-    
+  border-radius: 30px;
     background-color:rgb(69, 98, 104) !important;
     color: rgb(252, 252, 252) !important;
 }
@@ -220,7 +272,8 @@ a:hover{
     margin-top: 10px;
 }
 .btn-search{
-    margin-left:50px ;
+    margin-left:10px ;
+    border-radius: 30px;
 }
 .btn-sub{
   margin-top: 10px;
@@ -255,17 +308,15 @@ a:hover{
   }
   /* =============================POST-HEADER =============================*/
 
-.post-header:hover {
-    opacity: 0.5;
-  }
 .post-header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding-bottom: 30px;
+  padding: 20px;
   width: 100%;
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   color: #fafafa;
+  margin: 80px;
 }
 .title {
   padding-left: 5%;
@@ -313,11 +364,14 @@ a:hover{
   grid-column: 2;
   margin-right: 50%;
   opacity: 0.7;
+  margin-top: 10px;
 }
 .image img{
   width: 100%;
   height: 100%;
   padding: 50px;
+  border-radius: 30px;
+  box-shadow: #ffffff 1px 1px 9px;
 }
 
 #app:active * {
@@ -327,9 +381,7 @@ a:hover{
 .post-main {  
     width: 50%;
     min-height: 70vh;
-    padding-top: 50px;
-    
-
+    padding-bottom: 50px;
   }
 .section-title{
   font-weight: 700;
@@ -346,15 +398,15 @@ hr{
 }
 .main-content{
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.05rem;
-  color: #456268bb;
+  color: #000000;
   padding: 50px;
   background-color:rgba(100, 130, 200, 0.123) ;
   
 }
 .main-content a{
-  color: #456268;
+  color: #000000;
   text-decoration: none;
 }
 .main-content p{
@@ -521,14 +573,16 @@ hr{
   -webkit-transform: translateY(30%);
   transform: translateY(30%);
   display: block;
-  margin: 22px 0 16px 0;
-  font-size: var(--fontMedium);
-  font-weight: var(--fontLight);
-  color: rgb(32, 30, 30);
+  margin: 2px 0 16px 0;
+  font-size: 12px;
+  font-weight: 520;
+  letter-spacing: 0.02rem;
+  color: #456268;
+  padding: 10px;
   opacity: 0;
   -webkit-transition: all var(--speed) ease;
   transition: all var(--speed) ease;
-  background: #abaaa036;
+  background: rgba(100, 130, 200, 0.123);
 }
 
 .card_post:hover .card__bio {
@@ -697,7 +751,6 @@ li, ol, ul {
 /*========================== COUTER =======================*/
 .main-count{
   
-  padding: 30px;
 }
 .counter-up .content{
   z-index: 1;
@@ -714,7 +767,7 @@ li, ol, ul {
   font-weight: 400;
 }
 .counter-up .content .box{
-  border: 1px dashed rgba(138, 209, 231, 0.6);
+  border: 1px dashed rgb(255 255 255);
   width: calc(25% - 30px);
   border-radius: 5px;
   display: flex;
@@ -722,6 +775,7 @@ li, ol, ul {
   justify-content: space-evenly;
   flex-direction: column;
   padding: 20px;
+  background: #e6e9efc7;
 }
 .content .box .icon{
   font-size: 48px;
@@ -755,7 +809,11 @@ li, ol, ul {
 /*================================ COMMENT ==========================*/
 .testimonial {
   padding: 5%;
+  background-image: url('image/testimonial_1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .sec-heading {
 	margin-bottom: 50px;
   
@@ -859,9 +917,10 @@ li, ol, ul {
     color:#2fad53!important;    
 }
 footer{
-    padding-top: 10px;
-    background-color: #b5cbd9;
-    
+    padding-top: 30px;
+    background-color: #ffffff;
+    border-radius: 30px 30px 0 0 ;
+    box-shadow: #e2e7f0 1px -7px 2px 0px;;
 }
 .footer ul{
     list-style: none;
@@ -898,16 +957,12 @@ footer{
 
 /* ========================POST ========================*/
 .manage{
-  padding: 50px;
-  color: #000000!important;
-  font-size: 20px;
-  font-weight: 400;
   border-radius: 0px 30px 0px 0;
   border: 8px white;
   box-shadow: #539ed952 12px 7px 15px 0px;
-  position: fixed;
- 
+  min-height: 100vh;
 }
+
 .manage a{
   color: #000000!important;
 }
@@ -916,6 +971,13 @@ footer{
 }
 .avata{
   padding: 50px;
+  color: #000000!important;
+  font-size: 20px;
+  font-weight: 400;
+  background-size: cover ;
+  z-index: 1000;
+  position: fixed;
+  
 }
 .manage-title ul li {
   font-size: 20px;
@@ -935,4 +997,409 @@ footer{
 .fa-sign-out-alt{
   padding: 15px;
   font-size: 25px;
+}
+.manage-post{
+  padding: 80px;
+  background-image: url('image/fakurian-design-PGdW_bHDbpI-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.new-title h1{
+  text-align: center;
+  font-weight: 700;
+  color: #476a79;
+  padding: 20px;
+  
+}
+.information-status h1{
+  text-align: center;
+  font-weight: 700;
+  color: #476a79;
+}
+
+.infomation-edit{
+  padding: 30px;
+    border-radius: 30px;
+    box-shadow: #788df452 3px 2px 13px 9px;
+}
+.new-address{
+  padding: 30px;
+    border-radius: 30px;
+    box-shadow: #788df452 3px 2px 13px 9px;
+}
+.post-detail{
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: #788df452 3px 2px 13px 9px;
+}
+.price-manage {
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  
+}
+.btn-post_prf{
+  margin-left: 45%;
+  margin-top: 30px;
+  padding: 50px;
+}
+.btn-save{
+  margin-left: 45%;
+  margin-top: 30px;
+  padding: 50px;
+}
+.slogan-demo {
+  width: 750px;
+  animation: typing 5s steps(68), blink 10s step-end infinite alternate;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  text-align: center;
+  color: black;
+  font-size: 39px;
+  padding: 10px;
+
+}
+.slogan-demo h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+/* ========================Detail.html========================*/
+/* ========================nav-headertab========================*/
+.detail-body{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.detail-page{
+  padding-top: 70px;
+  box-shadow: #b9cad8 -1px 1px 16px 1px;
+  background-color: rgba(255, 255, 255, 0.568);
+  
+}
+
+.link-detail{
+  display: flex;
+}
+.link-detail a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 350;
+}
+.detail-title h1{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+/* ========================Slide hình ảnh========================*/
+
+.slider1{
+  margin: 0 0 20px 25px;
+  width: 700px;
+}
+
+.sliders img{
+  width: 680px;
+  height: 400px;
+  margin: 0 10px;
+}
+/* ========================Thông tin chính========================*/
+.info_phong{
+  display: flex;
+}
+.info_phong table{
+  width: 350px;
+  border-radius: 30px;
+  
+}
+.info_phong table th {
+  width: 150px;
+  padding: 0px 7px;
+  background: #fff;
+  border:1px solid rgba(104, 100, 100, 0.685);
+}
+.info_phong table td{
+  border:1px solid rgba(104, 100, 100, 0.685);
+  padding: 0px 7px; 
+  background: #fff;
+}
+.inf span{
+  margin: 5px;
+}
+/*===========Giới thiệu============*/
+
+.info-content-body{
+  background-color: rgb(223 225 245);
+  border: 25px solid #8183a4;
+  border-radius: 30px;
+  padding: 18px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+/*===========date và id============*/
+.address{
+  margin: 10px;
+}
+/*===========Thông tin người đăng tin============*/
+.user-info{
+  display: flex;
+  margin: 10px;
+  width: 270px;
+  background-color: #fff;
+  box-shadow: #a3b3cf3d 5px -2px 4px 3px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.user-info_1 {
+  display: flex;
+  margin-left: 63%;
+  width: 270px;
+  background-color: #fff;
+  box-shadow: #a3b3cf3d 5px -2px 4px 3px;
+  padding: 9px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.user-info img{
+  border-radius: 50%;
+}
+.user-name{
+  padding: 10px 0 0 10px;
+}
+.user-name a{
+  text-decoration: none;
+  color: #3c4146;
+  font-weight: 500;
+}
+.user-date{
+  font-size: 12px;
+  font-weight: 300;
+}
+/*===========Bản đồ============*/
+.map-content{
+width: 100%;
+}
+/*===========Báo cáo vi phạm============*/
+.report{
+  margin-left: 88%;
+  width: 110px;
+  border: 0.5px solid rgb(30, 206, 209) ;
+  padding: 3px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+}
+/*===========Liên hệ============*/
+.agent-contact{
+  margin: 0px 35px 0 35px;
+  width: 320px;
+  padding: 15px 0 15px 10px;
+  border-radius: 30px;
+  background:#fcfcfc;
+  background-size:cover ;
+  box-shadow: #b1bfd16b 4px 4px 10px 3px;
+  position: absolute;
+  
+
+}
+.agent-contact {
+  animation-name: move;
+  animation-duration: 1.5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  }
+
+.info-number{
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #456268;
+  padding: 10px;
+  border-radius: 10px;
+}
+.info-number a{
+  text-decoration: none;
+  color: #456268;
+}
+.connect{
+  margin: 350px 20px 20px 60px;
+  display: flex;
+  background: #0b10280d;
+  padding: 18px;
+  border-radius: 11px;
+  box-shadow: #949cdf4f -3px 4px 8px;
+}
+.connect a{
+  text-decoration: none;
+
+}
+/* ========================Lưu tin ========================*/
+.save-news{
+  width: 129px;
+    background-color: #fff;
+    box-shadow: #949cdf 1px 1px 5px 0px;
+    padding: 10px 11px;
+    border-radius: 30px;
+    margin-right: 24px;
+    font-weight: 600;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 0.05em;;
+}
+.contacts{
+  margin: -15px 0 0 10px;
+}
+
+/* ========================Tin mới đăng ========================*/
+.news{
+  width: 355px;
+  height: 500px;
+  margin: 10px;
+  background-color: #949cdf4d;
+  box-shadow: #3f51b547 -6px 10px 9px 0px;
+  padding: 10px;
+  border: 1px solid #dfe1f5
+}
+
+
+/* ========================Tìm kiếm liên quan ========================*/
+.findroom{
+  width: 355px;
+  height: 500px;
+  margin: 10px;
+  background-color: #949cdf4d;
+  margin-top: 50px;
+  box-shadow: #3f51b547 -6px 10px 9px 0px;
+  padding: 10px;
+  border: 1px solid #dfe1f5
+}
+
+/* ========================Trọ tương tự ========================*/
+.slidefooter{
+  width: 100%;
+  height: 100%;
+  
+}
+.slick-next::before, .slick-prev::before {
+  color: #000000!important;
+}
+.room_info{
+  width: 270px!important;
+  height: 344px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 10px;
+  box-shadow: #52526a85 3px 5px 10px 0px;
+}
+.room_info img{
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px white;
+}
+.room_info a{
+  text-decoration: none;
+}
+.room_info .info-text{
+  margin: 10px 10px 10px 0;
+}
+.room_info .roomname {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.room_info .S-room{
+  font-size: 13px;
+}
+.room_info .price2{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(3, 3, 3);
+  text-align: right;
+  margin-right: 15px;
+}
+.roomname:hover{
+  color: rgb(17, 33, 211);
+}
+
+a:hover{
+  color: rgb(17, 33, 211);
+}
+.post_title{
+  padding-top: 70px;
+  margin-left: 2%;
+  font-weight: 600;
+}
+/* ========================POST========================*/
+.post_main{
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+.post_page{
+  padding-bottom: 50px;
+  
+}
+.card_detail{
+  padding-top: 20px;
+  box-shadow: #b8e5ff4a 1px 1px 10px 3px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.price_card{
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f6a9e;
+}
+.card_title{
+  font-size: 25px;
+  font-weight: 700;
+  color: #0c0d0e;
+}
+.card_text span{
+  padding:10px;
+  align-items: center;
+  justify-content: center;
+}
+.post_card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: stretch;
+  
+  background-color: rgba(255, 255, 255, 0.466);
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 30px 0 30px 0;
+}
+.card_detail img:hover{
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in;
+} 
+.card_detail img{
+  position: relative;
+  
+}
+.btn-detail_post{
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  left: 40%;
+  top: 20%;
+  overflow: hidden;
 }
